@@ -8,10 +8,10 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 # Importing the dataset
-dataset = pd.read_csv('data/csv_files/ready.csv')
+dataset = pd.read_csv('data2/my_files/ready.csv')
 # X = dataset.iloc[:, [0, 7]].values
-X = dataset.iloc[:, 0:7].values
-y = dataset.iloc[:, 7].values
+X = dataset.iloc[:, 0:8].values
+y = dataset.iloc[:, 8].values
 
 # Splitting the dataset into the Training set and Test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)

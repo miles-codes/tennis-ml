@@ -7,9 +7,9 @@ import numpy as np
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('data/csv_files/ready.csv')
-X = dataset.iloc[:, 0:7].values
-y = dataset.iloc[:, 7].values
+dataset = pd.read_csv('data2/my_files/ready.csv')
+X = dataset.iloc[:, 0:8].values
+y = dataset.iloc[:, 8].values
 
 # Encoding categorical data
 # from sklearn.preprocessing import LabelEncoder, OneHotEncoder
